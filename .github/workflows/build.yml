@@ -67,7 +67,7 @@ jobs:
 
   wheels-manylinux:
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         manylinux-version: ['2014']
         arch: [i686, x86_64]
@@ -107,7 +107,7 @@ jobs:
 
   wheels-winmac:
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         os: [Windows, macOS]
         python-version: ['3.6', '3.7', '3.8', '3.9']
